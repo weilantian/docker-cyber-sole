@@ -1,12 +1,6 @@
 FROM elgalu/selenium
 
 USER root
-
-RUN apt -qqy --no-install-recommends install \
-        python\
-        pip\
-    && apt -qqy clean
-
 ADD ./maincode /opt/maincode
 RUN chmod -R 777 /opt/maincode
 WORKDIR /opt/maincode

@@ -1,4 +1,4 @@
-FROM docker-selenium
+FROM elgalu/selenium
 
 
 

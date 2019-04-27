@@ -9,4 +9,4 @@ EXPOSE 8080
 
 USER seluser
 
-ENTRYPOINT  ["./entry.sh"]
+ENTRYPOINT  ["python","main.py"]

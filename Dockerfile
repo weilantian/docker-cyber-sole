@@ -8,6 +8,7 @@ RUN apt -qqy --no-install-recommends install \
     && apt -qqy clean
 
 ADD ./maincode /opt/maincode
+RUN chmod -R 777 /opt/maincode
 WORKDIR /opt/maincode
 RUN pip install -r requirements.txt
 EXPOSE 8080
